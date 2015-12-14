@@ -755,31 +755,6 @@ a:active {
     box-shadow: none;
 }
 
-.wpcw_fe_navigation_box {
-    display: flex;
-    justify-content: center;
-    padding: 0.875em;
-}
-
-.fe_btn {
-    margin: 0.875em;
-    padding: 0.875em;
-    width: 10em;
-    text-align: center;
-    background-color: gray;
-    color: white;
-    border-radius: 2px;
-    transition: all .3s ease;
-
-    &.btn_completion { background-color: green; }
-
-    &:hover, &:focus, &:active {
-        background-color: #2a19b2;
-        color: white;
-    }
-}
-
-
 
 /**
  * 6.2 - Menus
@@ -1517,25 +1492,6 @@ blockquote:after,
     border-color: #007acc;
     color: #007acc;
     outline: 0;
-}
-
-.wpcw_course_progress {
-    .wpcw_fe_course_title { @extend h3; }
-
-    .wpcw_fe_unit_progress, .wpcw_fe_toggle { display: none; }
-
-    td {
-        &:first-child { width: 30%; }
-        &:nth-child(2) { width: 70%; }
-    }
-
-    .wpcw_fe_unit {
-        &_complete {
-            background-color: $unit-complete-color;
-
-            &, & a { color: green; }
-        }
-    }
 }
 
 
@@ -2401,20 +2357,6 @@ body.search-no-results .page-header {
 /**
  * 11.6 - Footer
  */
-
-.wpcw_fe_progress_box {
-    border: 1px solid silver;
-    padding: 1em;
-
-    &_mark {
-        display: block;
-        float: right;
-
-        .btn_completion { margin-right: 0; }
-    }
-
-    &_complete { background-color: $unit-complete-color; }
-}
 
 .site-footer {
     padding: 0 7.6923% 1.75em;
