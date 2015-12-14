@@ -2840,20 +2840,6 @@ p > video {
         margin-bottom: 5.25em;
     }
 
-    .entry-header,
-    .post-thumbnail,
-    .entry-content,
-    .entry-summary,
-    .entry-footer,
-    .comments-area,
-    .image-navigation,
-    .post-navigation,
-    .page-header,
-    .page-content,
-    .content-bottom-widgets {
-        margin-right: 23.0769%;
-    }
-
     .entry-title {
         font-size: 33px;
         font-size: 2.0625rem;
@@ -2932,12 +2918,6 @@ p > video {
     .widget,
     .content-bottom-widgets .widget-area {
         margin-bottom: 5.25em;
-    }
-
-    .sidebar,
-    .widecolumn {
-        margin-bottom: 5.25em;
-        padding-right: 23.0769%;
     }
 
     body:not(.search-results) .entry-summary li > ul,
@@ -3533,36 +3513,7 @@ p > video {
         margin-top: -1.105263158em;
     }
 
-    body:not(.search-results) article:not(.type-page) .entry-content {
-        float: right;
-        width: 71.42857144%;
-    }
-
-    body:not(.search-results) article:not(.type-page) .entry-content > blockquote.alignleft.below-entry-meta {
-        margin-left: -40%;
-        width: -webkit-calc(60% - 1.4736842105em);
-        width: calc(60% - 1.4736842105em);
-    }
-
-    body:not(.search-results) article:not(.type-page) img.below-entry-meta,
-    body:not(.search-results) article:not(.type-page) figure.below-entry-meta {
-        clear: both;
-        display: block;
-        float: none;
-        margin-right: 0;
-        margin-left: -40%;
-        max-width: 140%;
-    }
-
-    body:not(.search-results) article:not(.type-page) figure.below-entry-meta img.below-entry-meta,
-    body:not(.search-results) article:not(.type-page) table figure.below-entry-meta,
-    body:not(.search-results) article:not(.type-page) table img.below-entry-meta {
-        margin: 0;
-        max-width: 100%;
-    }
-
     body:not(.search-results) article:not(.type-page) .entry-footer {
-        float: left;
         margin-top: 0.1538461538em;
         width: 21.42857143%;
     }
