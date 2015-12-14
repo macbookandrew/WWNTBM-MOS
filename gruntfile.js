@@ -10,7 +10,7 @@ module.exports = function (grunt) {
     sass: {
         dev: {
             files: {
-                "style.css" : "SCSS/style.scss"
+                "wwntbm-mos.css" : "SCSS/WWNTBM-MOS.scss"
             }
         }
     },
