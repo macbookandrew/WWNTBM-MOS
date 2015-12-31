@@ -44,6 +44,7 @@ $font-stack-sans-serif:    Montserrat, "Helvetica Neue", sans-serif;
 $font-stack-serif:         Merriweather, Georgia, serif;
 
 $unit-complete-color:      #E5FBD7;
+$color-blue:               #007acc;
 
 /**
  * 1.0 - Normalize
@@ -414,7 +415,7 @@ acronym {
 
 mark,
 ins {
-    background: #007acc;
+    background: $color-blue;
     color: #fff;
     padding: 0.125em 0.25em;
     text-decoration: none;
@@ -638,7 +639,7 @@ input[type="tel"]:focus,
 input[type="number"]:focus,
 textarea:focus {
     background-color: #fff;
-    border-color: #007acc;
+    border-color: $color-blue;
     color: #1a1a1a;
     outline: 0;
 }
@@ -707,7 +708,7 @@ input[type="search"].search-field {
  */
 
 a {
-    color: #007acc;
+    color: $color-blue;
     text-decoration: none;
 }
 
@@ -801,7 +802,7 @@ a:active {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-    color: #007acc;
+    color: $color-blue;
 }
 
 .main-navigation .current-menu-item > a,
@@ -858,7 +859,7 @@ a:active {
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
     background-color: transparent;
-    color: #007acc;
+    color: $color-blue;
 }
 
 .dropdown-toggle:focus {
@@ -912,7 +913,7 @@ a:active {
 
 .social-navigation a:hover:before,
 .social-navigation a:focus:before {
-    color: #007acc;
+    color: $color-blue;
 }
 
 .social-navigation a[href*="codepen.io"]:before {
@@ -1064,7 +1065,7 @@ a:active {
 
 .post-navigation a:hover .post-title,
 .post-navigation a:focus .post-title {
-    color: #007acc;
+    color: $color-blue;
 }
 
 .post-navigation div + div {
@@ -1178,7 +1179,7 @@ a:active {
 .pagination .prev:focus,
 .pagination .next:hover,
 .pagination .next:focus {
-    background-color: #007acc;
+    background-color: $color-blue;
     color: #fff;
 }
 
@@ -1423,7 +1424,7 @@ blockquote:after,
 }
 
 .widget_calendar tbody a {
-    background-color: #007acc;
+    background-color: $color-blue;
     color: #fff;
     display: block;
     font-weight: 700;
@@ -1489,8 +1490,8 @@ blockquote:after,
 
 .tagcloud a:hover,
 .tagcloud a:focus {
-    border-color: #007acc;
-    color: #007acc;
+    border-color: $color-blue;
+    color: $color-blue;
     outline: 0;
 }
 
@@ -1566,7 +1567,7 @@ blockquote:after,
 
 .site-branding .site-title a:hover,
 .site-branding .site-title a:focus {
-    color: #007acc;
+    color: $color-blue;
 }
 
 .site-description {
@@ -1596,8 +1597,8 @@ blockquote:after,
 .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: transparent;
-    border-color: #007acc;
-    color: #007acc;
+    border-color: $color-blue;
+    color: $color-blue;
 }
 
 .menu-toggle.toggled-on,
@@ -1664,7 +1665,7 @@ blockquote:after,
 
 .entry-title a:hover,
 .entry-title a:focus {
-    color: #007acc;
+    color: $color-blue;
 }
 
 .post-thumbnail {
@@ -1952,7 +1953,7 @@ body:not(.search-results) .entry-summary > :last-child,
 
 .entry-footer a:hover,
 .entry-footer a:focus {
-    color: #007acc;
+    color: $color-blue;
 }
 
 .entry-footer > span:not(:first-child):before {
@@ -2060,7 +2061,7 @@ body.search-no-results .page-header {
 
 .page-links a:hover,
 .page-links a:focus {
-    background-color: #007acc;
+    background-color: $color-blue;
     border-color: transparent;
     color: #fff;
 }
@@ -2216,7 +2217,7 @@ body.search-no-results .page-header {
 .comment-metadata a:focus,
 .pingback .comment-edit-link:hover,
 .pingback .comment-edit-link:focus {
-    color: #007acc;
+    color: $color-blue;
 }
 
 .comment-metadata .edit-link,
@@ -2245,7 +2246,7 @@ body.search-no-results .page-header {
 .comment-reply-link {
     border: 1px solid #d1d1d1;
     border-radius: 2px;
-    color: #007acc;
+    color: $color-blue;
     display: inline-block;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
@@ -2258,7 +2259,7 @@ body.search-no-results .page-header {
 .comment-reply-link:hover,
 .comment-reply-link:focus {
     border-color: currentColor;
-    color: #007acc;
+    color: $color-blue;
     outline: 0;
 }
 
@@ -2315,7 +2316,7 @@ body.search-no-results .page-header {
 }
 
 .required {
-    color: #007acc;
+    color: $color-blue;
     font-family: $font-stack-serif;
 }
 
@@ -2375,7 +2376,7 @@ body.search-no-results .page-header {
 
 .site-info a:hover,
 .site-info a:focus {
-    color: #007acc;
+    color: $color-blue;
 }
 
 .site-footer .site-title {
@@ -2929,7 +2930,7 @@ p > video {
 
     .main-navigation li:hover > a,
     .main-navigation li.focus > a {
-        color: #007acc;
+        color: $color-blue;
     }
 
     .main-navigation ul ul {
@@ -3796,7 +3797,7 @@ p > video {
     }
 
     a {
-        color: #007acc !important; /* Make sure color schemes don't affect to print */
+        color: $color-blue !important; /* Make sure color schemes don't affect to print */
     }
 
     .entry-content a,
@@ -3805,7 +3806,7 @@ p > video {
     .comment-content a,
     .pingback .comment-body > a {
         box-shadow: none;
-        border-bottom: 1px solid #007acc !important; /* Make sure color schemes don't affect to print */
+        border-bottom: 1px solid $color-blue !important; /* Make sure color schemes don't affect to print */
     }
 
     .site {
@@ -3892,7 +3893,7 @@ p > video {
         border-bottom: 1px solid #ddd;
         font-weight: bold;
         background-color: #F1F1F1;
-        background-image: linear-gradient(top, #F9F9F9, #DCDCDC);
+        background-image: linear-gradient(to bottom, #F9F9F9, #DCDCDC);
         background-color: #F1F1F1;
     }
 
