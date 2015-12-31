@@ -182,8 +182,7 @@ textarea {
 button,
 html input[type="button"],
 input[type="reset"],
-input[type="submit"],
-.fe_btn {
+input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
 }
@@ -4068,7 +4067,6 @@ p > video {
 
     &_mark, &_download {
         float: right;
-        margin: 5px 0 10px 20px;
     }
 }
 
