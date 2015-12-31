@@ -37,7 +37,7 @@ module.exports = function (grunt) {
             },
             options: {
                 watchTask: true,
-                proxy: "http://train.dev",
+                proxy: "http://train.wwntbm.dev",
             },
         },
     },
