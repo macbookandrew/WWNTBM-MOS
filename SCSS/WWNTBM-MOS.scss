@@ -3923,9 +3923,12 @@ p > video {
         background: url('img/icon_toggle_closed.png') no-repeat 0 3px;
         padding-left: 22px;
         display: block;
-        text-decoration: none;
+        text-decoration: underline;
+        box-shadow: none;
+        font-size: 1.5em;
+        font-weight: 700;
 
-        &:hover { text-decoration: underline; }
+        &:hover { text-decoration: none; }
     }
 
     .wpcw_fe_course_progress_course.active a { background-image: url('img/icon_toggle_open.png'); }
@@ -4001,14 +4004,19 @@ p > video {
 /* Progress */
 .wpcw_fe_unit_progress {
     span {
-        display: block;
-        background: url('../img/icon_pending_24.png') transparent no-repeat;
-        height: 24px;
-        width: 24px;
+        display: inline-block;
+
+        &:before {
+            display: inline-block;
+            font-size: 1.5em;
+            content: '╳';
+            color: gray;
+        }
     }
 
-    &_complete span {
-        background-image: url('../img/icon_complete_24.png');
+    &_complete span:before {
+        content: '✓';
+        color: green;
     }
 }
 
