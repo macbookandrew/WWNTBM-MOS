@@ -4036,9 +4036,11 @@ p > video {
         &:last-child { margin-bottom: 0 !important; }
     }
 
-    &_complete {
-        padding-left: 55px;
-        background: url('img/icon_complete_24.png') no-repeat 20px 10px;
+    &_complete:before {
+        content: '✓';
+        color: green;
+        font-size: 1.5em;
+        padding-right: 1em;
     }
 
     &_pending {
