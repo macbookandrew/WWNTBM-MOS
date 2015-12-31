@@ -3968,7 +3968,7 @@ p > video {
     .wpcw_fe_module td {
         font-weight: bold;
         background-color: #F1F1F1;
-        background-image: linear-gradient(top, #F9F9F9, #DCDCDC);
+        background-image: linear-gradient(to bottom, #F9F9F9, #DCDCDC);
         background-color: #F1F1F1;
     }
 
@@ -4107,16 +4107,17 @@ a.fe_btn_small {
     padding: 4px 6px;
 }
 
-a.fe_btn_completion,.wpcw_fe_quiz_submit_data input.fe_btn_completion {
+a.fe_btn_completion,
+.wpcw_fe_quiz_submit_data input.fe_btn_completion {
     border: 1px solid #63a62f;
     border-bottom: 1px solid #5b992b;
     background-color: #7fbf4d;
-    background-image: linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: linear-gradient(to bottom, #7fbf4d, #63a62f);
     box-shadow: inset 0 1px 0 0 #96ca6d;
 
     &:hover {
         background-color: #76b347;
-        background-image: linear-gradient(top, #76b347, #5e9e2e);
+        background-image: linear-gradient(to bottom, #76b347, #5e9e2e);
         box-shadow: inset 0 1px 0 0 #8dbf67;
     }
 }
@@ -4125,12 +4126,12 @@ a.fe_btn_download {
     border: 1px solid #63a62f;
     border-bottom: 1px solid #5b992b;
     background-color: #7fbf4d;
-    background-image: linear-gradient(top, #7fbf4d, #63a62f);
+    background-image: linear-gradient(to bottom, #7fbf4d, #63a62f);
     box-shadow: inset 0 1px 0 0 #96ca6d;
 
     &:hover {
         background-color: #76b347;
-        background-image: linear-gradient(top, #76b347, #5e9e2e);
+        background-image: linear-gradient(to bottom, #76b347, #5e9e2e);
         box-shadow: inset 0 1px 0 0 #8dbf67;
     }
 }
@@ -4149,12 +4150,12 @@ a.fe_btn_navigation {
     border: 1px solid #636BDB;
     border-bottom: 1px solid #565EDB;
     background-color: #7E84E0;
-    background-image: linear-gradient(top, #7E84E0, #636BDB);
+    background-image: linear-gradient(to bottom, #7E84E0, #636BDB);
     box-shadow: inset 0 1px 0 0 #9CA0DB;
 
     &:hover {
         background-color: #7E84E0;
-        background-image: linear-gradient(top, #5A62DB, #3B45D4);
+        background-image: linear-gradient(to bottom, #5A62DB, #3B45D4);
         box-shadow: inset 0 1px 0 0 #8dbf67;
     }
 
