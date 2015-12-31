@@ -33,7 +33,7 @@ module.exports = function (grunt) {
     browserSync: {
         dev: {
             bsFiles: {
-                src : ['style.css', '*.php', '**/*.js'],
+                src : ['style.css', '*.php', '**/*.js', '!node_modules'],
             },
             options: {
                 watchTask: true,
