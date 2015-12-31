@@ -3915,7 +3915,7 @@ p > video {
     .wpcw_fe_course_progress_course { line-height: 20px; }
 
     .wpcw_fe_course_progress_course a {
-        background: url('../img/icon_toggle_closed.png') no-repeat 0 3px;
+        background: url('img/icon_toggle_closed.png') no-repeat 0 3px;
         padding-left: 22px;
         display: block;
         text-decoration: none;
@@ -3923,7 +3923,7 @@ p > video {
         &:hover { text-decoration: underline; }
     }
 
-    .wpcw_fe_course_progress_course.active a { background-image: url('../img/icon_toggle_open.png'); }
+    .wpcw_fe_course_progress_course.active a { background-image: url('img/icon_toggle_open.png'); }
 
     td.wpcw_fe_course_progress_detail #wpcw_fe_course td { padding: 2px 5px; }
 }
@@ -4026,7 +4026,7 @@ p > video {
 
     &_complete {
         padding-left: 55px;
-        background: url('../img/icon_complete_24.png') no-repeat 20px 10px;
+        background: url('img/icon_complete_24.png') no-repeat 20px 10px;
     }
 
     &_pending {
@@ -4314,12 +4314,12 @@ a.fe_btn_navigation {
 
 .wpcw_fe_quiz_q_result_correct {
     color: green;
-    background-image: url('../img/icon_tick.png');
+    background-image: url('img/icon_tick.png');
 }
 
 .wpcw_fe_quiz_q_result_incorrect {
     color: red;
-    background-image: url('../img/icon_cross.png');
+    background-image: url('img/icon_cross.png');
 }
 
 .wpcw_fe_quiz_box_full_answers b {
@@ -4449,7 +4449,7 @@ a.fe_btn_navigation {
     float: right;
     padding: 0 0 10px 24px;
     font-weight: bold;
-    background: transparent url('../img/icon_timer.png') no-repeat;
+    background: transparent url('img/icon_timer.png') no-repeat;
     line-height: 24px;
 }
 
