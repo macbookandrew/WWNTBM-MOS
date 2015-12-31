@@ -27,13 +27,13 @@ module.exports = function (grunt) {
             ]
         },
         dist: {
-            src: 'style.css',
+            src: 'wwntbm-mos.css',
         }
     },
     browserSync: {
         dev: {
             bsFiles: {
-                src : ['style.css', '*.php', '**/*.js', '!node_modules'],
+                src : ['wwntbm-mos.css', '*.php', '**/*.js', '!node_modules'],
             },
             options: {
                 watchTask: true,
