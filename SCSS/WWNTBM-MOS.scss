@@ -47,14 +47,14 @@ $unit-complete-color:      #E5FBD7;
 $active-color:             #f96816;
 
 $border-colors: (
-    1: #009DC1,
-    2: #FBB800,
-    3: #E01E1E,
-    4: #9ACB45,
-    5: #91459E,
-    6: #F14A4E,
-    7: #65C7B2,
-    8: #FC6800
+    deputation: #009DC1,
+    principles-and-practices: #FBB800,
+    interacting-with-the-office: #E01E1E,
+    prayer-letters: #9ACB45,
+    presenting-your-ministry: #91459E,
+    what-every-pastor-should-know: #F14A4E,
+    what-i-wish-i-had-known: #65C7B2,
+    ministry-organization: #FC6800
 );
 
 /**
@@ -3933,7 +3933,7 @@ p > video {
     }
 
     @each $key, $color-code in $border-colors {
-        &:nth-child(#{$key}) h2 { border-image: linear-gradient(to right,
+        &.#{$key} h2 { border-image: linear-gradient(to right,
             map-get($border-colors, $key) 0, map-get($border-colors, $key) 33%,
             darken(map-get($border-colors, $key), 10%) 33%, darken(map-get($border-colors, $key), 10%) 66%,
             darken(map-get($border-colors, $key), 20%) 66%, darken(map-get($border-colors, $key), 20%) 100%
