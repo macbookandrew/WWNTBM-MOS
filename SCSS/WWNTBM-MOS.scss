@@ -3899,6 +3899,11 @@ p > video {
     @media screen and (min-width: 400px) and (max-width: 799px) { width: calc(50% - 1em); }
     @media screen and (max-width: 399px) { width: 100%; }
 
+    img {
+        opacity: 0.5;
+        transition: all .3s ease;
+    }
+    &:hover img { opacity: 0.3; }
 
     h2 {
         position: absolute;
@@ -3910,16 +3915,12 @@ p > video {
         padding: 2em 0.5em 0.5em;
         text-align: center;
         color: white;
-        background-color: rgba(black, 0.6);
         transition: all .3s ease;
         border-width: 0 0 .5em;
         border-style: solid;
         font-family: $font-stack-sans-serif;
         font-weight: 300;
 
-        &:hover {
-            background-color: rgba(black, 0.8);
-            color: #a3a3a3;
         @media screen and (min-width: 600px) and (max-width: 800px) { font-size: 1.75rem; }
         @media screen and (min-width: 300px) and (max-width: 400px) { font-size: 1.75rem; }
 
