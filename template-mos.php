@@ -23,7 +23,39 @@ get_header(); ?>
             // Include the page content template. ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="entry-content">
-                    <?php the_content(); ?>
+                    <?php
+                    the_content();
+
+                    // WP_Query arguments
+                    $args = array (
+                        'post_parent'           => $post->ID,
+                        'post_type'             => array( 'page' ),
+                        'orderby'               => 'menu_order',
+                        'order'                 => 'ASC'
+                    );
+
+                    // The Query
+                    $modules_query = new WP_Query( $args );
+
+                    // The Loop
+                    if ( $modules_query->have_posts() ) {
+                        echo '<section class="module-container">';
+                        while ( $modules_query->have_posts() ) {
+                            $modules_query->the_post();
+
+                            echo '<section class="module ' . $post->post_name . '">';
+                                echo '<a href="' . get_permalink() . '">';
+                                    the_post_thumbnail();
+                                    echo '<h2>' . get_the_title() . '</h2>';
+                                echo '</a>';
+                            echo '</section>';
+                        }
+                        echo '</section><!-- .module-container -->';
+                    }
+
+                    // Restore original Post Data
+                    wp_reset_postdata();
+                    ?>
                 </div><!-- .entry-content -->
 
                 <?php
