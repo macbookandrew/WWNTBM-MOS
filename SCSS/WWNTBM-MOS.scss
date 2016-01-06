@@ -1460,7 +1460,7 @@ blockquote:after,
 }
 
 .widget_calendar caption {
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 1.75em;
 }
 
@@ -1823,7 +1823,7 @@ a.post-thumbnail:focus {
 .textwidget h4,
 .textwidget h5,
 .textwidget h6 {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .entry-content h1:first-child,
@@ -1957,7 +1957,7 @@ body:not(.search-results) .entry-summary > :last-child,
     clear: none;
     font-size: 16px;
     font-size: 1rem;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.75;
     margin: 0;
 }
@@ -2639,7 +2639,7 @@ p > video {
 .widecolumn h2 {
     font-size: 23px;
     font-size: 1.4375rem;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.2173913043;
     margin-bottom: 1.2173913043em;
 }
@@ -3916,10 +3916,13 @@ p > video {
         text-align: center;
         color: white;
         transition: all .3s ease;
+        font-family: $font-stack-sans-serif;
+        font-weight: 400;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        hyphens: auto;
         border-width: 0 0 .5em;
         border-style: solid;
-        font-family: $font-stack-sans-serif;
-        font-weight: 300;
 
         @media screen and (min-width: 600px) and (max-width: 800px) { font-size: 1.75rem; }
         @media screen and (min-width: 300px) and (max-width: 400px) { font-size: 1.75rem; }
