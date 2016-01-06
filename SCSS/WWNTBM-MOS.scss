@@ -2124,6 +2124,14 @@ body.search-no-results .page-header {
 }
 
 
+.home {
+    .content-area {
+        width: 100%;
+        margin: 0;
+    }
+    .entry-content { text-align: center; }
+}
+
 /**
  * 11.3 - Post Formats
  */
