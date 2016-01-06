@@ -1,5 +1,6 @@
 <?php
 
+// remove default style.css, load wwntbm-mos.css
 function add_theme_styles() {
     wp_dequeue_style( 'twentysixteen-style-css' );
     wp_enqueue_style( 'wwntbm-mos-styles', get_stylesheet_directory_uri() . '/wwntbm-mos.css' );
