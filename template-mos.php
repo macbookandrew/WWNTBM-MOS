@@ -47,14 +47,7 @@ get_header(); ?>
                             echo '<section class="module ' . $post->post_name . '">';
                             echo '<a href="' . get_permalink() . '">';
                             echo '<img src="' . esc_url( $landing_page_image['url'] ) . '" alt="' . esc_attr( $landing_page_image['alt'] ) . '" srcset="' . esc_attr( wp_get_attachment_image_srcset( $landing_page_image['id'] ) ) . '" sizes="' . esc_attr( wp_get_attachment_image_sizes( $landing_page_image['id'] ) ) . '" />';
-                            echo '<h2>';
-                            // custom title if available
-                            if ( get_field( 'alternate_page_title' ) ) {
-                                echo get_field( 'alternate_page_title' );
-                            } else {
-                                echo get_the_title();
-                            }
-                            echo '</h2>';
+                            echo '<h2>' . get_the_title() . '</h2>';
                             echo '</a>';
                             echo '</section>';
                         }
