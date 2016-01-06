@@ -3917,6 +3917,11 @@ p > video {
         &:hover {
             background-color: rgba(black, 0.8);
             color: #a3a3a3;
+        .small {
+            font-family: $font-stack-serif;
+            font-style: italic;
+            font-size: .75em;
+            font-weight: 300;
         }
     }
 

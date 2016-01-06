@@ -44,10 +44,17 @@ get_header(); ?>
                             $modules_query->the_post();
 
                             echo '<section class="module ' . $post->post_name . '">';
-                                echo '<a href="' . get_permalink() . '">';
-                                    the_post_thumbnail();
-                                    echo '<h2>' . get_the_title() . '</h2>';
-                                echo '</a>';
+                            echo '<a href="' . get_permalink() . '">';
+                            the_post_thumbnail();
+                            echo '<h2>';
+                            // custom title if available
+                            if ( get_post_meta($id, 'landing-page-title', true) ) {
+                                echo get_post_meta($id, 'landing-page-title', true);
+                            } else {
+                                echo get_the_title();
+                            }
+                            echo '</h2>';
+                            echo '</a>';
                             echo '</section>';
                         }
                         echo '</section><!-- .module-container -->';
