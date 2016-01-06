@@ -42,14 +42,15 @@ get_header(); ?>
                         echo '<section class="module-container">';
                         while ( $modules_query->have_posts() ) {
                             $modules_query->the_post();
+                            $landing_page_image = get_field( 'landing_page_image' );
 
                             echo '<section class="module ' . $post->post_name . '">';
                             echo '<a href="' . get_permalink() . '">';
-                            the_post_thumbnail();
+                            echo '<img src="' . esc_url( $landing_page_image['url'] ) . '" alt="' . esc_attr( $landing_page_image['alt'] ) . '" srcset="' . esc_attr( wp_get_attachment_image_srcset( $landing_page_image['id'] ) ) . '" sizes="' . esc_attr( wp_get_attachment_image_sizes( $landing_page_image['id'] ) ) . '" />';
                             echo '<h2>';
                             // custom title if available
-                            if ( get_post_meta($id, 'landing-page-title', true) ) {
-                                echo get_post_meta($id, 'landing-page-title', true);
+                            if ( get_field( 'alternate_page_title' ) ) {
+                                echo get_field( 'alternate_page_title' );
                             } else {
                                 echo get_the_title();
                             }
