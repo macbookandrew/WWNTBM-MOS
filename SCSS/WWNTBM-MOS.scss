@@ -44,7 +44,7 @@ $font-stack-sans-serif:    Montserrat, "Helvetica Neue", sans-serif;
 $font-stack-serif:         Merriweather, Georgia, serif;
 
 $unit-complete-color:      #E5FBD7;
-$color-blue:               #007acc;
+$active-color:             #f96816;
 
 /**
  * 1.0 - Normalize
@@ -415,7 +415,7 @@ acronym {
 
 mark,
 ins {
-    background: $color-blue;
+    background: $active-color;
     color: #fff;
     padding: 0.125em 0.25em;
     text-decoration: none;
@@ -595,17 +595,20 @@ input[type="submit"][disabled]:focus,
     text-transform: uppercase;
 }
 
-button:hover,
-button:focus,
 input[type="button"]:hover,
 input[type="button"]:focus,
 input[type="reset"]:hover,
 input[type="reset"]:focus,
 input[type="submit"]:hover,
-input[type="submit"]:focus,
+input[type="submit"]:focus  {
+    border-color: $active-color;
+}
+
+button:hover,
+button:focus,
 .fe_btn:hover,
 .fe_btn:focus {
-    background: $color-blue;
+    background: $active-color;
 }
 
 button:focus,
@@ -615,6 +618,17 @@ input[type="submit"]:focus,
 .fe_btn:focus {
     outline: thin dotted;
     outline-offset: -4px;
+}
+
+button.orange {
+    background-color: transparent;
+    border: 1px solid $active-color;
+    color: $active-color;
+
+    &:hover {
+        background-color: $active-color;
+        color: white;
+    }
 }
 
 input[type="text"],
@@ -643,7 +657,7 @@ input[type="tel"]:focus,
 input[type="number"]:focus,
 textarea:focus {
     background-color: #fff;
-    border-color: $color-blue;
+    border-color: $active-color;
     color: #1a1a1a;
     outline: 0;
 }
@@ -712,7 +726,7 @@ input[type="search"].search-field {
  */
 
 a {
-    color: $color-blue;
+    color: $active-color;
     text-decoration: none;
 }
 
@@ -806,7 +820,7 @@ a:active {
 
 .main-navigation a:hover,
 .main-navigation a:focus {
-    color: $color-blue;
+    color: $active-color;
 }
 
 .main-navigation .current-menu-item > a,
@@ -863,7 +877,7 @@ a:active {
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
     background-color: transparent;
-    color: $color-blue;
+    color: $active-color;
 }
 
 .dropdown-toggle:focus {
@@ -917,7 +931,7 @@ a:active {
 
 .social-navigation a:hover:before,
 .social-navigation a:focus:before {
-    color: $color-blue;
+    color: $active-color;
 }
 
 .social-navigation a[href*="codepen.io"]:before {
@@ -1069,7 +1083,7 @@ a:active {
 
 .post-navigation a:hover .post-title,
 .post-navigation a:focus .post-title {
-    color: $color-blue;
+    color: $active-color;
 }
 
 .post-navigation div + div {
@@ -1183,7 +1197,7 @@ a:active {
 .pagination .prev:focus,
 .pagination .next:hover,
 .pagination .next:focus {
-    background-color: $color-blue;
+    background-color: $active-color;
     color: #fff;
 }
 
@@ -1428,7 +1442,7 @@ blockquote:after,
 }
 
 .widget_calendar tbody a {
-    background-color: $color-blue;
+    background-color: $active-color;
     color: #fff;
     display: block;
     font-weight: 700;
@@ -1494,8 +1508,8 @@ blockquote:after,
 
 .tagcloud a:hover,
 .tagcloud a:focus {
-    border-color: $color-blue;
-    color: $color-blue;
+    border-color: $active-color;
+    color: $active-color;
     outline: 0;
 }
 
@@ -1571,7 +1585,7 @@ blockquote:after,
 
 .site-branding .site-title a:hover,
 .site-branding .site-title a:focus {
-    color: $color-blue;
+    color: $active-color;
 }
 
 .site-description {
@@ -1601,8 +1615,8 @@ blockquote:after,
 .menu-toggle:hover,
 .menu-toggle:focus {
     background-color: transparent;
-    border-color: $color-blue;
-    color: $color-blue;
+    border-color: $active-color;
+    color: $active-color;
 }
 
 .menu-toggle.toggled-on,
@@ -1669,7 +1683,7 @@ blockquote:after,
 
 .entry-title a:hover,
 .entry-title a:focus {
-    color: $color-blue;
+    color: $active-color;
 }
 
 .post-thumbnail {
@@ -1957,7 +1971,7 @@ body:not(.search-results) .entry-summary > :last-child,
 
 .entry-footer a:hover,
 .entry-footer a:focus {
-    color: $color-blue;
+    color: $active-color;
 }
 
 .entry-footer > span:not(:first-child):before {
@@ -2065,7 +2079,7 @@ body.search-no-results .page-header {
 
 .page-links a:hover,
 .page-links a:focus {
-    background-color: $color-blue;
+    background-color: $active-color;
     border-color: transparent;
     color: #fff;
 }
@@ -2221,7 +2235,7 @@ body.search-no-results .page-header {
 .comment-metadata a:focus,
 .pingback .comment-edit-link:hover,
 .pingback .comment-edit-link:focus {
-    color: $color-blue;
+    color: $active-color;
 }
 
 .comment-metadata .edit-link,
@@ -2250,7 +2264,7 @@ body.search-no-results .page-header {
 .comment-reply-link {
     border: 1px solid #d1d1d1;
     border-radius: 2px;
-    color: $color-blue;
+    color: $active-color;
     display: inline-block;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
@@ -2263,7 +2277,7 @@ body.search-no-results .page-header {
 .comment-reply-link:hover,
 .comment-reply-link:focus {
     border-color: currentColor;
-    color: $color-blue;
+    color: $active-color;
     outline: 0;
 }
 
@@ -2320,7 +2334,7 @@ body.search-no-results .page-header {
 }
 
 .required {
-    color: $color-blue;
+    color: $active-color;
     font-family: $font-stack-serif;
 }
 
@@ -2380,7 +2394,7 @@ body.search-no-results .page-header {
 
 .site-info a:hover,
 .site-info a:focus {
-    color: $color-blue;
+    color: $active-color;
 }
 
 .site-footer .site-title {
@@ -2934,7 +2948,7 @@ p > video {
 
     .main-navigation li:hover > a,
     .main-navigation li.focus > a {
-        color: $color-blue;
+        color: $active-color;
     }
 
     .main-navigation ul ul {
@@ -3801,7 +3815,7 @@ p > video {
     }
 
     a {
-        color: $color-blue !important; /* Make sure color schemes don't affect to print */
+        color: $active-color !important; /* Make sure color schemes don't affect to print */
     }
 
     .entry-content a,
@@ -3810,7 +3824,7 @@ p > video {
     .comment-content a,
     .pingback .comment-body > a {
         box-shadow: none;
-        border-bottom: 1px solid $color-blue !important; /* Make sure color schemes don't affect to print */
+        border-bottom: 1px solid $active-color !important; /* Make sure color schemes don't affect to print */
     }
 
     .site {
