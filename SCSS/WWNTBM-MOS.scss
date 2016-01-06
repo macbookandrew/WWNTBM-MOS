@@ -3894,8 +3894,11 @@ p > video {
     position: relative;
     margin-bottom: 2em;
 
-    @media screen and (min-width: 768px) { width: calc(25% - 2em); }
-    @media screen and (max-width: 767px) { width: calc(50% - 2em); }
+    @media screen and (min-width: 1200px) { width: calc(25% - 2em); }
+    @media screen and (min-width: 800px) and (max-width: 1199px) { width: calc(33% - 1em); }
+    @media screen and (min-width: 400px) and (max-width: 799px) { width: calc(50% - 1em); }
+    @media screen and (max-width: 399px) { width: 100%; }
+
 
     h2 {
         position: absolute;
@@ -3904,7 +3907,7 @@ p > video {
         bottom: 0;
         left: 0;
         margin: 0;
-        padding: 33% 1em 1em;
+        padding: 2em 0.5em 0.5em;
         text-align: center;
         color: white;
         background-color: rgba(black, 0.6);
@@ -3917,6 +3920,9 @@ p > video {
         &:hover {
             background-color: rgba(black, 0.8);
             color: #a3a3a3;
+        @media screen and (min-width: 600px) and (max-width: 800px) { font-size: 1.75rem; }
+        @media screen and (min-width: 300px) and (max-width: 400px) { font-size: 1.75rem; }
+
         .small {
             font-family: $font-stack-serif;
             font-style: italic;
