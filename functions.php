@@ -30,3 +30,6 @@ function twentysixteen_fonts_url() {
 
     return $fonts_url;
 }
+
+// add header image dimensions
+add_image_size( 'module-header', 1800, 300 );
