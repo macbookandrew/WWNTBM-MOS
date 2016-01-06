@@ -3924,7 +3924,7 @@ p > video {
         @media screen and (min-width: 600px) and (max-width: 800px) { font-size: 1.75rem; }
         @media screen and (min-width: 300px) and (max-width: 400px) { font-size: 1.75rem; }
 
-        .small {
+        em {
             font-family: $font-stack-serif;
             font-style: italic;
             font-size: .75em;
