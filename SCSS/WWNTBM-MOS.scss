@@ -450,6 +450,11 @@ body {
     /* Fallback for when there is no custom background color defined. */
 }
 
+a, button, input {
+    transition: all .3s ease;
+}
+
+
 hr {
     background-color: #d1d1d1;
     border: 0;
