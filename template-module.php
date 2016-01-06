@@ -19,8 +19,11 @@ get_header(); ?>
         <?php
         // Start the loop.
         while ( have_posts() ) : the_post();
+
+        echo '<header class="module-header">';
         the_post_thumbnail( 'header-image' );
-        the_title();
+        echo '<h1 class="module-title">' . get_the_title() . '</h1>';
+        echo '</header>';
 
             // Include the page content template. ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
