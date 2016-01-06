@@ -625,14 +625,21 @@ input[type="submit"]:focus,
     outline-offset: -4px;
 }
 
-button.orange {
-    background-color: transparent;
-    border: 1px solid $active-color;
-    color: $active-color;
+.button {
+    @extend button;
+    -webkit-appearance: none;
 
-    &:hover {
-        background-color: $active-color;
-        color: white;
+    .entry-content & { box-shadow: none; }
+
+    &.orange {
+        background-color: transparent;
+        border: 1px solid $active-color;
+        color: $active-color;
+
+        &:hover {
+            background-color: $active-color;
+            color: white;
+        }
     }
 }
 
