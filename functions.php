@@ -43,3 +43,16 @@ function add_slug_body_class( $classes ) {
     return $classes;
 }
 add_filter( 'body_class', 'add_slug_body_class' );
+
+// add custom course content
+add_filter( 'columncount', function() { return 1; } );
+
+function add_duration_header() {
+    return '<td>Duration</td>';
+}
+add_filter( 'columnheader', 'add_duration_header' );
+
+function add_duration_content( $content, $unit ) {
+    return '<td>' . get_field( 'video_duration', $unit->ID ) .'</td>';
+}
+add_filter( 'columncontent', 'add_duration_content', 10, 2 );
