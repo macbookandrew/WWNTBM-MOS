@@ -4079,7 +4079,8 @@ h1.module-title,
 
         td { padding: 2px 5px; }
 
-        .wpcw_fe_unit_progress span { display: none; }
+        .wpcw_fe_toggle,
+        .wpcw_fe_unit_progress { display: none; }
 
         .wpcw_fe_unit_complete { background: #DEFFD6; }
 
