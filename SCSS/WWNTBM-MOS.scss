@@ -1419,9 +1419,9 @@ blockquote:after,
  */
 
 .widget {
-    border-top: 4px solid #1a1a1a;
     margin-bottom: 3.5em;
-    padding-top: 1.75em;
+    padding: 2em;
+    background-color: #282828;
 }
 
 .widget-area > :last-child,
