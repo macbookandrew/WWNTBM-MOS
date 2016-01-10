@@ -4045,16 +4045,19 @@ h1.module-title,
 
 /* Course Details */
 #wpcw_fe_course {
-    font-size: 10pt;
-    border-spacing: 0;
-    border-radius: 3px;
-    border: 1px solid #DDD;
-    border-bottom: 0;
+    border: none;
+    table-layout: fixed;
+
+    tr:nth-child(even) { background-color: rgba(white, 0.1); }
 
     td {
         padding: 10px 15px;
-        border: 0;
-        border-bottom: 1px solid #ddd;
+        border: none;
+
+        &:nth-child(1) { width: 15%; }
+        &:nth-child(2) { width: 60%; }
+        &:nth-child(3) { width: 15%; }
+        &:nth-child(4) { width: 10%; }
     }
 
     .wpcw_fe_unit_none td {
@@ -4064,9 +4067,7 @@ h1.module-title,
 
     .wpcw_fe_module td {
         font-weight: bold;
-        background-color: #F1F1F1;
-        background-image: linear-gradient(to bottom, #F9F9F9, #DCDCDC);
-        background-color: #F1F1F1;
+        border: none;
     }
 
     .wpcw_fe_unit a { font-weight: bold; }

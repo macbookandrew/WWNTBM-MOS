@@ -53,6 +53,6 @@ function add_duration_header() {
 add_filter( 'columnheader', 'add_duration_header' );
 
 function add_duration_content( $content, $unit ) {
-    return '<td>' . get_field( 'video_duration', $unit->ID ) .'</td>';
+    return '<td class="duration">' . get_field( 'video_duration', $unit->ID ) .'</td>';
 }
 add_filter( 'columncontent', 'add_duration_content', 10, 2 );
