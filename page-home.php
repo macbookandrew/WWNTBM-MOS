@@ -11,6 +11,11 @@
  * @since Twenty Sixteen 1.0
  */
 
+if ( is_user_logged_in() ) {
+    wp_redirect( home_url( '/missionary-orientation-school/' ) );
+    exit;
+}
+
 get_header(); ?>
 
 <div id="primary" class="content-area no-sidebar">
