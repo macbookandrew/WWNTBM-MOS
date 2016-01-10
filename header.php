@@ -9,6 +9,13 @@
  * @since Twenty Sixteen 1.0
  */
 
+// get logged-in status for use in header link
+if ( is_user_logged_in() ) {
+    $custom_home = '/missionary-orientation-school/';
+} else {
+    $custom_home = '/';
+}
+
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
@@ -30,9 +37,9 @@
             <div class="site-header-main">
                 <div class="site-branding">
                     <?php if ( is_front_page() && is_home() ) : ?>
-                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+                        <h1 class="site-title"><a href="<?php echo esc_url( home_url( $custom_home ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
                     <?php else : ?>
-                        <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+                        <p class="site-title"><a href="<?php echo esc_url( home_url( $custom_home ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
                     <?php endif;
 
                     $description = get_bloginfo( 'description', 'display' );
