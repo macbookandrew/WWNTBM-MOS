@@ -153,8 +153,6 @@ figure {
 }
 
 hr {
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
 }
 
@@ -212,8 +210,6 @@ input::-moz-focus-inner {
 
 input[type="checkbox"],
 input[type="radio"] {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 0.4375em;
     padding: 0;
@@ -442,8 +438,6 @@ big {
  */
 
 html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -451,8 +445,6 @@ html {
 *:before,
 *:after {
     /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
     box-sizing: inherit;
 }
 
@@ -663,7 +655,7 @@ input[type="tel"],
 input[type="number"],
 textarea {
     background: #f7f7f7;
-    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     border: 1px solid #d1d1d1;
     border-radius: 2px;
     color: #686868;
@@ -715,7 +707,6 @@ textarea:focus {
 
 input[type="search"].search-field {
     border-radius: 2px 0 0 2px;
-    width: -webkit-calc(100% - 42px);
     width: calc(100% - 42px);
 }
 
@@ -804,8 +795,6 @@ a:active {
 
 .site-header-menu {
     display: none;
-    -webkit-flex: 0 1 100%;
-    -ms-flex: 0 1 100%;
     flex: 0 1 100%;
     margin: 0.875em 0;
 }
@@ -1578,14 +1567,8 @@ blockquote:after,
 }
 
 .site-header-main {
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -1856,9 +1839,6 @@ a.post-thumbnail:focus {
 .post-navigation .post-title,
 .entry-title,
 .comments-title {
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
     hyphens: auto;
 }
 
@@ -2843,7 +2823,6 @@ p > video {
     .entry-content blockquote.alignright {
         border-width: 4px 0 0 0;
         padding: 0.9473684211em 0 0;
-        width: -webkit-calc(50% - 0.736842105em);
         width: calc(50% - 0.736842105em);
     }
 
@@ -2946,15 +2925,11 @@ p > video {
     }
 
     .site-header-main {
-        -webkit-align-items: flex-start;
-        -ms-flex-align: start;
         align-items: flex-start;
     }
 
     .site-header-menu {
         display: block;
-        -webkit-flex: 0 1 auto;
-        -ms-flex: 0 1 auto;
         flex: 0 1 auto;
     }
 
@@ -3063,9 +3038,6 @@ p > video {
     .main-navigation ul ul .menu-item-has-children > a:after {
         right: 0.5625em;
         top: 0.875em;
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
         transform: rotate(90deg);
     }
 
@@ -3252,7 +3224,6 @@ p > video {
     }
 
     .widget input[type="search"].search-field {
-        width: -webkit-calc(100% - 35px);
         width: calc(100% - 35px);
     }
 
@@ -3872,7 +3843,6 @@ p > video {
     .entry-content blockquote.alignright {
         border-width: 4px 0 0 0;
         padding: 0.9473684211em 0 0;
-        width: -webkit-calc(50% - 0.736842105em);
         width: calc(50% - 0.736842105em);
     }
 
@@ -4278,8 +4248,6 @@ a.fe_btn_navigation {
         margin: 10px 0;
         border: 1px solid #DDD;
         padding: 15px 20px;
-        -moz-border-radius: 3px;
-        -webkit-border-radius: 3px;
         border-radius: 3px;
         line-height: 1.2em;
         font-size: 10pt;
@@ -4329,8 +4297,6 @@ a.fe_btn_navigation {
         max-width: 100%;
         border: 1px solid #ddd;
         box-shadow: none;
-        -moz-box-shadow: none;
-        -webkit-box-shadow: none;
         background: #fff;
         padding: 3px;
     }
@@ -4483,8 +4449,6 @@ a.fe_btn_navigation {
 .wpcw_loader {
     display: block;
     box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
 }
 
 .wpcw_loader img {
@@ -4513,7 +4477,6 @@ a.fe_btn_navigation {
     overflow: hidden;
     border-radius: 4px;
     background-color: #efefef;
-    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.2);
     background-repeat: repeat-x;
 }
