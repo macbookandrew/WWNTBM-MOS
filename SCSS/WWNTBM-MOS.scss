@@ -4098,6 +4098,11 @@ h1.module-title,
     line-height: 1.2em;
     font-size: 11pt;
 
+    &:after {
+        display: table;
+        content: '';
+        clear: both;
+    }
 
     p {
         line-height: 1.2em !important;
@@ -4114,9 +4119,9 @@ h1.module-title,
     }
 
     &_pending {
-        color: #050505;
-        background: #BAF5BA;
-        border-color: #26C510;
+        color: #3d3d3d;
+        background: #d3d3d3;
+        border-color: #727272;
     }
 
     &_error {
@@ -4127,7 +4132,7 @@ h1.module-title,
 
     &_success {
         color: green;
-        background: #BAF5BA;
+        background: $unit-complete-color;
         border-color: #26C510;
     }
 
@@ -4139,6 +4144,8 @@ h1.module-title,
 
     &_mark, &_download {
         float: right;
+
+        .fe_btn { display: block; }
     }
 }
 
