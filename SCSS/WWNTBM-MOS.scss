@@ -4036,6 +4036,7 @@ h1.module-title,
 .wpcw_widget_progress {
     tr:first-child { display: none; }
 
+    td:first-child { width: 5em; }
     td.duration { width: 4em; }
 
     #wpcw_fe_course {
