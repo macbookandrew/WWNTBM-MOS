@@ -4009,6 +4009,10 @@ h1.module-title,
         padding: 10px 15px;
         border: none;
 
+        &.duration { text-align: right; }
+    }
+
+    .content-area & td {
         &:nth-child(1) { width: 15%; }
         &:nth-child(2) { width: 60%; }
         &:nth-child(3) { width: 15%; }
@@ -4030,6 +4034,10 @@ h1.module-title,
 
 /* Widget Progress */
 .wpcw_widget_progress {
+    tr:first-child { display: none; }
+
+    td.duration { width: 4em; }
+
     #wpcw_fe_course {
         font-size: 9pt;
 
