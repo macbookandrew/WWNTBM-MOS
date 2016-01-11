@@ -1,7 +1,7 @@
 <?php
 /**
  * Template name: Module Page
- * The template for displaying pages
+ * The template for each individual module
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages and that
@@ -24,6 +24,8 @@ get_header(); ?>
         the_post_thumbnail( 'header-image' );
         echo '<h1 class="module-title">' . get_the_title() . '</h1>';
         echo '</header>';
+
+        echo '<p class="breadcrumb"><a href="' . home_url( '/missionary-orientation-school/' ) . '">Missionary Orientation School</a> / ' . get_the_title() . '</p>';
 
             // Include the page content template. ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
