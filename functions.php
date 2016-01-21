@@ -56,3 +56,6 @@ function add_duration_content( $content, $unit ) {
     return '<td class="duration">' . get_field( 'video_duration', $unit->ID ) .'</td>';
 }
 add_filter( 'columncontent', 'add_duration_content', 10, 2 );
+
+// enable comments on units
+add_post_type_support( 'course_unit', 'comments' );
