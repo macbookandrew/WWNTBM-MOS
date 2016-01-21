@@ -1657,6 +1657,11 @@ blockquote:after,
     color: #a3a3a3;
 
     em { font-style: normal; }
+
+    @media screen and (max-width: 56.874em) {
+        margin-left: 7.6923%;
+        margin-right: 7.6923%;
+    }
 }
 
 .site-main > article {
