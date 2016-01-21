@@ -48,7 +48,7 @@ add_filter( 'body_class', 'add_slug_body_class' );
 add_filter( 'columncount', function() { return 1; } );
 
 function add_duration_header() {
-    return '<td>Length</td>';
+    return '<td class="length-header">Length</td>';
 }
 add_filter( 'columnheader', 'add_duration_header' );
 
