@@ -3913,6 +3913,8 @@ p > video {
     background-size: cover;
 
     .module-title {
+        text-shadow: 0 0 1em rgba(0, 0, 0, 0.8);
+
         @media screen and (min-width: 56.875em) { padding: 2vw; }
         @media screen and (max-width: 56.874em) { padding: 3.5vw; }
     }
