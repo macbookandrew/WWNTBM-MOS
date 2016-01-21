@@ -20,8 +20,7 @@ get_header(); ?>
         // Start the loop.
         while ( have_posts() ) : the_post();
 
-        echo '<header class="module-header">';
-        the_post_thumbnail( 'header-image' );
+        echo '<header class="module-header" style="background-image: url(' . wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'header-image' )[0] . ');">';
         echo '<h1 class="module-title">' . get_the_title() . '</h1>';
         echo '</header>';
 
