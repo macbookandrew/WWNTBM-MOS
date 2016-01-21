@@ -59,3 +59,9 @@ add_filter( 'columncontent', 'add_duration_content', 10, 2 );
 
 // enable comments on units
 add_post_type_support( 'course_unit', 'comments' );
+
+// enqueue responsive-videos.js
+function add_responsive_videos_js() {
+    wp_enqueue_script( 'responsive-videos', get_stylesheet_directory_uri() . '/js/responsive-videos.min.js', array( 'jquery' ) );
+}
+add_action( 'wp_enqueue_scripts', 'add_responsive_videos_js' );

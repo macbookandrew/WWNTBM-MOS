@@ -6,6 +6,10 @@ module.exports = function (grunt) {
             files: "SCSS/*.scss",
             tasks: ['sass', 'postcss'],
         },
+        javascript: {
+            files: ["js/*.js", "!js/*.min.js"],
+            tasks: ['uglify'],
+        },
     },
     sass: {
         dev: {
@@ -30,6 +34,13 @@ module.exports = function (grunt) {
             src: 'wwntbm-mos.css',
         }
     },
+    uglify: {
+        custom: {
+            files: {
+                'js/responsive-videos.min.js': ['js/responsive-videos.js'],
+            },
+        },
+    },
     browserSync: {
         dev: {
             bsFiles: {
@@ -45,6 +56,7 @@ module.exports = function (grunt) {
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-postcss');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.registerTask('default', [

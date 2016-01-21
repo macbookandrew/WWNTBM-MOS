@@ -6,3 +6,4 @@
 *.css*
 !style.css
 .sass-cache/
+/js/responsive-videos.min.js
