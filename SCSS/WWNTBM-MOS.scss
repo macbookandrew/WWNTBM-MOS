@@ -647,7 +647,10 @@ input[type="submit"]:focus,
     .entry-content & { box-shadow: none; }
 }
 
-.fe_btn_navigation + .fe_btn_navigation { margin-left: 1em; }
+.fe_btn_navigation {
+    display: inline-block;
+    margin: 0 .5em 1em;
+}
 
 input[type="text"],
 input[type="email"],
@@ -4188,6 +4191,7 @@ h1.module-title,
 
     &_mark, &_download {
         float: right;
+        margin: 0 1em 1em;
 
         .fe_btn { display: block; }
     }
