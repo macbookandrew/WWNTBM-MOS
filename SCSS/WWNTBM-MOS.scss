@@ -4079,8 +4079,14 @@ h1.module-title,
 .wpcw_widget_progress {
     tr:first-child { display: none; }
 
-    td:first-child { width: 5em; }
-    td.duration { width: 4em; }
+    td:first-child {
+        width: 5em;
+        font-size: 82.5%;
+    }
+    td.duration {
+        width: 4em;
+        font-size: 82.5%;
+    }
 
     #wpcw_fe_course {
         font-size: 9pt;
