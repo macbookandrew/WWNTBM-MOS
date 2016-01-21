@@ -30,6 +30,7 @@ get_header(); ?>
                     global $wpdb;
                         $course_ID = get_post_meta(get_the_ID(), 'wpcw_associated_module', true);
                         $course_name = $wpdb->get_var( 'SELECT * FROM ' . $wpdb->prefix . 'wpcw_courses WHERE course_id = ' . $course_ID , 1 );
+                        $course_name = substr( $course_name, strpos( $course_name, ' ' ) );
                         $parent_page = $wpdb->get_row( 'SELECT * FROM ' . $wpdb->prefix . 'posts WHERE post_name LIKE \'' . sanitize_title( $course_name ) . '\' AND post_status LIKE \'publish\'' );
 
                         echo '<p class="breadcrumb"><a href="' . home_url( '/missionary-orientation-school/' ) . '">Missionary Orientation School</a> / ' . '<a href="' . home_url( '/missionary-orientation-school/' ) . $parent_page->post_name . '/">' . $parent_page->post_title . '</a> / ' . get_the_title() . '</p>';
