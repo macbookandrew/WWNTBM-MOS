@@ -4034,14 +4034,30 @@ h1.module-title,
 
     tr.wpcw_fe_module td:first-child { font-size: 0; }
 
-    .content-area & td {
-        &:nth-child(1) { width: 20%; }
-        &:nth-child(2) { width: 55%; }
-        &:nth-child(3) {
-            width: 15%;
-            word-wrap: normal;
+    td:nth-child(3) { word-wrap: normal; }
+
+    @media screen and (min-width: 32em) {
+        .content-area & td {
+            &:nth-child(1) { width: 20%; }
+            &:nth-child(2) { width: 55%; }
+            &:nth-child(3) { width: 15%; }
+            &:nth-child(4) { width: 10%; }
         }
-        &:nth-child(4) { width: 10%; }
+    }
+
+    @media screen and (max-width: 31em) {
+        .length-header { font-size: 0; }
+        .content-area & {
+            tr {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+            }
+            .wpcw_fe_unit td {
+                &:nth-child(1) { flex-basis: 100%; }
+                &:nth-child(2) { flex-basis: 100%; }
+            }
+        }
     }
 
     .wpcw_fe_unit_none td {
