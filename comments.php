@@ -73,6 +73,10 @@ if ( post_password_required() ) {
         comment_form( array(
             'title_reply_before' => '<h2 id="reply-title" class="comment-reply-title">',
             'title_reply_after'  => '</h2>',
+            'title_reply'        => 'Ask a Question',
+            'title_reply_to'     => 'Leave a Reply to %s',
+            'comment_field'      => '<p class="comment-form-comment"><label for="comment">Question</label> <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required="required"></textarea></p>',
+            'label_submit'       => 'Post Question',
         ) );
     ?>
 
