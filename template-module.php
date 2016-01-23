@@ -30,6 +30,9 @@ get_header(); ?>
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="entry-content">
                     <?php
+                    if ( ! is_user_logged_in() ) {
+                        echo '<div class="wpcw_fe_progress_box_wrap"><div class="wpcw_fe_progress_box wpcw_fe_progress_box_error">Please log in to access these videos. <a class="button orange" href="/wp-admin/">Log in here</a></div></div>';
+                    }
                     the_content();
                     ?>
                 </div><!-- .entry-content -->
