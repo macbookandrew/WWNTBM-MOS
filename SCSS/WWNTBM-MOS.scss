@@ -4168,8 +4168,8 @@ h1.module-title,
 
     .button { display: inline-block; }
 
-    &_complete {
-        background-color: #c7dec7;
+    &_complete, &_success {
+        background-color: $unit-complete-color;
         border-color: green;
         color: green;
 
@@ -4190,12 +4190,6 @@ h1.module-title,
         color: $active-color;
         background: lighten($active-color, 35%);
         border-color: $active-color;
-    }
-
-    &_success {
-        color: green;
-        background: $unit-complete-color;
-        border-color: #26C510;
     }
 
     &_warning {
