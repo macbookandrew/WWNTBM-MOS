@@ -4172,9 +4172,9 @@ h1.module-title,
     }
 
     &_error {
-        color: red;
-        background: #FDE0E0;
-        border-color: red;
+        color: $active-color;
+        background: lighten($active-color, 35%);
+        border-color: $active-color;
     }
 
     &_success {
