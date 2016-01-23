@@ -2203,11 +2203,20 @@ body.search-no-results .page-header {
 
 .comment-list .children {
     list-style: none;
-    margin: 0;
+    margin: 0 0 0.875em;
 }
 
-.comment-list .children > li {
+.comment {
     padding-left: 0.875em;
+
+    &.parent {
+        border-left: 5px solid #808080;
+
+        &.depth-2 { border-color: #606060; }
+        &.depth-3 { border-color: #505050; }
+        &.depth-4 { border-color: #404040; }
+        &.depth-5 { border-color: #303030; }
+    }
 }
 
 .comment-author {
@@ -2880,10 +2889,6 @@ p > video {
         position: relative;
         top: 0.25em;
         width: 42px;
-    }
-
-    .comment-list .children > li {
-        padding-left: 1.75em;
     }
 
     .comment-list + .comment-respond,
