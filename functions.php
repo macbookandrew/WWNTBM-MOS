@@ -65,3 +65,22 @@ function add_responsive_videos_js() {
     wp_enqueue_script( 'responsive-videos', get_stylesheet_directory_uri() . '/js/responsive-videos.min.js', array( 'jquery' ) );
 }
 add_action( 'wp_enqueue_scripts', 'add_responsive_videos_js' );
+
+// add login page branding
+add_filter( 'login_headerurl', function() { return home_url(); } );
+
+function login_styles() { ?>
+    <style type="text/css" media="screen">
+        body, html {
+            background-color: #181818;
+            color: #a3a3a3;
+        }
+        #login h1 a {
+            background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/WWNTBM-logo-on-dark.png);
+            background-size: contain;
+            width: 100%;
+            height: 150px;
+        }
+    </style>
+<?php }
+add_action ('login_head', 'login_styles' );
