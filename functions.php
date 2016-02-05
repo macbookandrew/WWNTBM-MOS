@@ -83,4 +83,4 @@ function login_styles() { ?>
         }
     </style>
 <?php }
-add_action ('login_head', 'login_styles' );
+add_action('login_head', 'login_styles' );
