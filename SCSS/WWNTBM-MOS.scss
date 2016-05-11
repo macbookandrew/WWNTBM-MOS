@@ -2396,6 +2396,13 @@ body.search-no-results .page-header {
     display: block;
 }
 
+.comment-form-subscriptions {
+    margin-top: 1em;
+
+    a { text-decoration: underline; }
+    label { text-transform: initial; }
+}
+
 /**
  * 11.5 - Sidebar
  */
