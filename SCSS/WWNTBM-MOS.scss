@@ -46,6 +46,7 @@ $font-stack-serif:         Merriweather, Georgia, serif;
 $unit-complete-color:      #E5FBD7;
 $active-color:             #f96816;
 $theme-blue:               #00748F;
+$theme-gray:               #686868;
 
 $border-colors: (
     the-ministry-of-deputation: #009DC1,
@@ -329,7 +330,7 @@ i {
 blockquote {
     border: 0 solid #1a1a1a;
     border-left-width: 4px;
-    color: #686868;
+    color: $theme-gray;
     font-size: 19px;
     font-size: 1.1875rem;
     font-style: italic;
@@ -550,24 +551,24 @@ td {
 
 /* Placeholder text color -- selectors need to be separate to work. */
 ::-webkit-input-placeholder {
-    color: #686868;
+    color: $theme-gray;
     font-family: $font-stack-sans-serif;
 }
 
 :-moz-placeholder {
-    color: #686868;
+    color: $theme-gray;
     font-family: $font-stack-sans-serif;
 }
 
 ::-moz-placeholder {
-    color: #686868;
+    color: $theme-gray;
     font-family: $font-stack-sans-serif;
     opacity: 1;
     /* Since FF19 lowers the opacity of the placeholder by default */
 }
 
 :-ms-input-placeholder {
-    color: #686868;
+    color: $theme-gray;
     font-family: $font-stack-sans-serif;
 }
 
@@ -666,7 +667,7 @@ textarea {
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     border: 1px solid #d1d1d1;
     border-radius: 2px;
-    color: #686868;
+    color: $theme-gray;
     padding: 0.625em 0.4375em;
     width: 100%;
 }
@@ -690,7 +691,7 @@ textarea:focus {
 }
 
 .post-password-form label {
-    color: #686868;
+    color: $theme-gray;
     display: block;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
@@ -755,7 +756,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-    color: #686868;
+    color: $theme-gray;
 }
 
 a:focus {
@@ -1068,7 +1069,7 @@ a:active {
 }
 
 .post-navigation .meta-nav {
-    color: #686868;
+    color: $theme-gray;
     font-size: 13px;
     font-size: 0.8125rem;
     letter-spacing: 0.076923077em;
@@ -1236,7 +1237,7 @@ a:active {
 .comment-navigation {
     border-top: 1px solid #d1d1d1;
     border-bottom: 1px solid #d1d1d1;
-    color: #686868;
+    color: $theme-gray;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
     font-size: 0.8125rem;
@@ -1456,13 +1457,13 @@ blockquote:after,
 
 .widget_calendar tbody a:hover,
 .widget_calendar tbody a:focus {
-    background-color: #686868;
+    background-color: $theme-gray;
     color: #fff;
 }
 
 /* Recent Posts widget */
 .widget_recent_entries .post-date {
-    color: #686868;
+    color: $theme-gray;
     display: block;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
@@ -1482,7 +1483,7 @@ blockquote:after,
 
 .widget_rss .rss-date,
 .widget_rss cite {
-    color: #686868;
+    color: $theme-gray;
     display: block;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
@@ -1593,7 +1594,7 @@ blockquote:after,
 }
 
 .site-description {
-    color: #686868;
+    color: $theme-gray;
     display: none;
     font-size: 1.125rem;
     font-weight: 400;
@@ -1852,7 +1853,7 @@ a.post-thumbnail:focus {
 }
 
 body:not(.search-results) .entry-summary {
-    color: #686868;
+    color: $theme-gray;
     font-size: 19px;
     font-size: 1.1875rem;
     line-height: 1.4736842105;
@@ -1952,7 +1953,7 @@ body:not(.search-results) .entry-summary > :last-child,
 }
 
 .author-bio {
-    color: #686868;
+    color: $theme-gray;
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 1.6153846154;
@@ -1965,7 +1966,7 @@ body:not(.search-results) .entry-summary > :last-child,
 }
 
 .entry-footer {
-    color: #686868;
+    color: $theme-gray;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
     font-size: 0.8125rem;
@@ -1978,7 +1979,7 @@ body:not(.search-results) .entry-summary > :last-child,
 }
 
 .entry-footer a {
-    color: #686868;
+    color: $theme-gray;
 }
 
 .entry-footer a:hover,
@@ -2000,7 +2001,7 @@ body:not(.search-results) .entry-summary > :last-child,
 }
 
 .sticky-post {
-    color: #686868;
+    color: $theme-gray;
     display: block;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
@@ -2049,7 +2050,7 @@ body.search-no-results .page-header {
 }
 
 .taxonomy-description {
-    color: #686868;
+    color: $theme-gray;
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 1.6153846154;
@@ -2110,7 +2111,7 @@ body.search-no-results .page-header {
 }
 
 .entry-caption {
-    color: #686868;
+    color: $theme-gray;
     font-size: 13px;
     font-size: 0.8125rem;
     font-style: italic;
@@ -2246,7 +2247,7 @@ body.search-no-results .page-header {
 
 .comment-metadata,
 .pingback .edit-link {
-    color: #686868;
+    color: $theme-gray;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
     font-size: 0.8125rem;
@@ -2259,7 +2260,7 @@ body.search-no-results .page-header {
 
 .comment-metadata a,
 .pingback .comment-edit-link {
-    color: #686868;
+    color: $theme-gray;
 }
 
 .comment-metadata a:hover,
@@ -2317,7 +2318,7 @@ body.search-no-results .page-header {
 }
 
 .comment-form label {
-    color: #686868;
+    color: $theme-gray;
     display: block;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
@@ -2336,7 +2337,7 @@ body.search-no-results .page-header {
 .comment-awaiting-moderation,
 .logged-in-as,
 .form-allowed-tags {
-    color: #686868;
+    color: $theme-gray;
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 1.6153846154;
@@ -2424,14 +2425,14 @@ body.search-no-results .page-header {
 }
 
 .site-info {
-    color: #686868;
+    color: $theme-gray;
     font-size: 13px;
     font-size: 0.8125rem;
     line-height: 1.6153846154;
 }
 
 .site-info a {
-    color: #686868;
+    color: $theme-gray;
 }
 
 .site-info a:hover,
@@ -2541,7 +2542,7 @@ p > video {
 }
 
 .wp-caption .wp-caption-text {
-    color: #686868;
+    color: $theme-gray;
     font-size: 13px;
     font-size: 0.8125rem;
     font-style: italic;
@@ -2604,7 +2605,7 @@ p > video {
 }
 
 .gallery-caption {
-    color: #686868;
+    color: $theme-gray;
     display: block;
     font-size: 13px;
     font-size: 0.8125rem;
@@ -2665,7 +2666,7 @@ p > video {
 
 .widecolumn label,
 .widecolumn .mu_register label {
-    color: #686868;
+    color: $theme-gray;
     font-family: $font-stack-sans-serif;
     font-size: 13px;
     font-size: 0.8125rem;
@@ -3792,7 +3793,7 @@ p > video {
     .site-info a,
     .wp-caption .wp-caption-text,
     .gallery-caption {
-        color: #686868 !important; /* Make sure color schemes don't affect to print */
+        color: $theme-gray !important; /* Make sure color schemes don't affect to print */
     }
 
     code,
@@ -4591,4 +4592,15 @@ h1.module-title,
 input[type="submit"].wdm-wpcwn-btn,
 input[type="radio"]:checked+label {
     background-color: $theme-blue !important;
+}
+
+.wdm-tbl-notes {
+    color: $theme-gray;
+}
+
+.wdm-note-item-content>h6,
+.wdm-wpcwn-print-note,
+.wdm-wpcwn-expo-word,
+.wdm-wpcwn-delete {
+    color: $theme-blue;
 }
