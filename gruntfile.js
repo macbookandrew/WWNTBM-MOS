@@ -48,7 +48,11 @@ module.exports = function (grunt) {
             },
             options: {
                 watchTask: true,
-                proxy: "http://train.wwntbm.dev",
+                proxy: "https://train.wwntbm.dev",
+                https: {
+                    key: "/Users/andrew/github/dotfiles/local-dev.key",
+                    cert: "/Users/andrew/github/dotfiles/local-dev.crt",
+                }
             },
         },
     },
