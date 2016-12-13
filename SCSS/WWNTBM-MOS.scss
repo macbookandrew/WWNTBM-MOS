@@ -45,6 +45,7 @@ $font-stack-serif:         Merriweather, Georgia, serif;
 
 $unit-complete-color:      #E5FBD7;
 $active-color:             #f96816;
+$theme-blue:               #00748F;
 
 $border-colors: (
     the-ministry-of-deputation: #009DC1,
@@ -1563,7 +1564,7 @@ blockquote:after,
 .site-header {
     padding: 2.625em 7.6923%;
     color: #282828;
-    background-color: #00748F;
+    background-color: $theme-blue;
 }
 
 .site-header-main {
@@ -4584,4 +4585,10 @@ h1.module-title,
     margin-bottom: 0;
     border-bottom: 0;
     padding-bottom: 0;
+}
+
+/* Notes */
+input[type="submit"].wdm-wpcwn-btn,
+input[type="radio"]:checked+label {
+    background-color: $theme-blue !important;
 }
