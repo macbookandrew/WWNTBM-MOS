@@ -4620,4 +4620,6 @@ input[type="radio"]:checked+label {
 .wdm-wpcwn-expo-word,
 .wdm-wpcwn-delete {
     color: $theme-blue;
+
+    &:hover { color: $theme-gray; }
 }
