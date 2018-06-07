@@ -2501,6 +2501,11 @@ iframe.stuck {
     position: fixed;
     bottom: 2em;
     max-height: 50vh;
+
+    @media screen and (min-width: 56.875em) {
+        right: 2em;
+        max-width: 50vw;
+    }
 }
 
 .entry-content .wp-audio-shortcode a,
