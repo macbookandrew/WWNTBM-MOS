@@ -2497,6 +2497,12 @@ p > video {
     margin-bottom: 0;
 }
 
+iframe.stuck {
+    position: fixed;
+    bottom: 2em;
+    max-height: 50vh;
+}
+
 .entry-content .wp-audio-shortcode a,
 .entry-content .wp-playlist a {
     box-shadow: none;
