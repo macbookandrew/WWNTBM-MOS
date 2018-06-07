@@ -1,9 +1,11 @@
 <?php
 
+define( MOS_THEME_VERSION, wp_get_theme()->get( 'Version' ) );
+
 // remove default style.css, load wwntbm-mos.css
 function add_theme_styles() {
     wp_dequeue_style( 'twentysixteen-style-css' );
-    wp_enqueue_style( 'wwntbm-mos-styles', get_stylesheet_directory_uri() . '/wwntbm-mos.css' );
+    wp_enqueue_style( 'wwntbm-mos-styles', get_stylesheet_directory_uri() . '/wwntbm-mos.css', array(), MOS_THEME_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'add_theme_styles' );
 
@@ -62,7 +64,7 @@ add_post_type_support( 'course_unit', 'comments' );
 
 // enqueue responsive-videos.js
 function add_responsive_videos_js() {
-    wp_enqueue_script( 'responsive-videos', get_stylesheet_directory_uri() . '/js/responsive-videos.min.js', array( 'jquery' ) );
+    wp_enqueue_script( 'responsive-videos', get_stylesheet_directory_uri() . '/js/responsive-videos.min.js', array( 'jquery' ), MOS_THEME_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'add_responsive_videos_js' );
 
