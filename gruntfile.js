@@ -35,6 +35,9 @@ module.exports = function (grunt) {
         }
     },
     uglify: {
+        options: {
+            sourceMap: true
+        },
         custom: {
             files: {
                 'js/responsive-videos.min.js': ['js/responsive-videos.js'],
@@ -48,11 +51,14 @@ module.exports = function (grunt) {
             },
             options: {
                 watchTask: true,
-                proxy: "https://train.wwntbm.dev",
+                open: "external",
+                host: "andrews-macbook-pro.local",
+                proxy: "https://wwntbm.wordpress.dev",
                 https: {
                     key: "/Users/andrew/github/dotfiles/local-dev.key",
                     cert: "/Users/andrew/github/dotfiles/local-dev.crt",
                 }
+
             },
         },
     },
