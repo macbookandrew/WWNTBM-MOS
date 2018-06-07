@@ -1,6 +1,6 @@
 <?php
 
-define( MOS_THEME_VERSION, wp_get_theme()->get( 'Version' ) );
+define( 'MOS_THEME_VERSION', wp_get_theme()->get( 'Version' ) );
 
 // remove default style.css, load wwntbm-mos.css
 function add_theme_styles() {
