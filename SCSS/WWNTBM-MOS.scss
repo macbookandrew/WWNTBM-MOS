@@ -750,39 +750,39 @@ input[type="search"].search-field {
  * 6.1 - Links
  */
 
-a {
+body a {
     color: $active-color;
     text-decoration: none;
-}
 
-a:hover,
-a:focus,
-a:active {
-    color: $theme-gray;
-}
+    &:hover,
+    &:focus,
+    &:active {
+        color: $theme-gray;
+    }
 
-a:focus {
-    outline: thin dotted;
-}
+    &:focus {
+        outline: thin dotted;
+    }
 
-a:hover,
-a:active {
-    outline: 0;
-}
+    &:hover,
+    &:active {
+        outline: 0;
+    }
 
-.entry-content a,
-.entry-summary a,
-.taxonomy-description a,
-.logged-in-as a,
-.comment-content a,
-.pingback .comment-body > a,
-.textwidget a,
-.wpcw_widget_progress a,
-.entry-footer a:hover,
-.site-info a:hover {
-    box-shadow: 0 1px 0 0 currentColor;
+    .entry-content &,
+    .entry-summary &,
+    .taxonomy-description &,
+    .logged-in-as &,
+    .comment-content &,
+    .pingback .comment-body > &,
+    .textwidget &,
+    .wpcw_widget_progress &,
+    .entry-footer &:hover,
+    .site-info &:hover {
+        box-shadow: 0 1px 0 0 currentColor;
 
-    &:hover, &:focus { box-shadow: none; }
+        &:hover, &:focus { box-shadow: none; }
+    }
 }
 
 

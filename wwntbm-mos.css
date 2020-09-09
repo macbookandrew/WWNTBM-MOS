@@ -756,57 +756,23 @@ input[type=search].search-field {
 /**
  * 6.1 - Links
  */
-a {
+body a {
   color: #f96816;
   text-decoration: none;
 }
-
-a:hover,
-a:focus,
-a:active {
+body a:hover, body a:focus, body a:active {
   color: #686868;
 }
-
-a:focus {
+body a:focus {
   outline: thin dotted;
 }
-
-a:hover,
-a:active {
+body a:hover, body a:active {
   outline: 0;
 }
-
-.entry-content a,
-.entry-summary a,
-.taxonomy-description a,
-.logged-in-as a,
-.comment-content a,
-.pingback .comment-body > a,
-.textwidget a,
-.wpcw_widget_progress a,
-.entry-footer a:hover,
-.site-info a:hover {
+.entry-content body a, .entry-summary body a, .taxonomy-description body a, .logged-in-as body a, .comment-content body a, .pingback .comment-body > body a, .textwidget body a, .wpcw_widget_progress body a, .entry-footer body a:hover, .site-info body a:hover {
   box-shadow: 0 1px 0 0 currentColor;
 }
-.entry-content a:hover, .entry-content a:focus,
-.entry-summary a:hover,
-.entry-summary a:focus,
-.taxonomy-description a:hover,
-.taxonomy-description a:focus,
-.logged-in-as a:hover,
-.logged-in-as a:focus,
-.comment-content a:hover,
-.comment-content a:focus,
-.pingback .comment-body > a:hover,
-.pingback .comment-body > a:focus,
-.textwidget a:hover,
-.textwidget a:focus,
-.wpcw_widget_progress a:hover,
-.wpcw_widget_progress a:focus,
-.entry-footer a:hover:hover,
-.entry-footer a:hover:focus,
-.site-info a:hover:hover,
-.site-info a:hover:focus {
+.entry-content body a:hover, .entry-content body a:focus, .entry-summary body a:hover, .entry-summary body a:focus, .taxonomy-description body a:hover, .taxonomy-description body a:focus, .logged-in-as body a:hover, .logged-in-as body a:focus, .comment-content body a:hover, .comment-content body a:focus, .pingback .comment-body > body a:hover, .pingback .comment-body > body a:focus, .textwidget body a:hover, .textwidget body a:focus, .wpcw_widget_progress body a:hover, .wpcw_widget_progress body a:focus, .entry-footer body a:hover:hover, .entry-footer body a:hover:focus, .site-info body a:hover:hover, .site-info body a:hover:focus {
   box-shadow: none;
 }
 

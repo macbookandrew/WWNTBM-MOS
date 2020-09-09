@@ -24,7 +24,10 @@
     "uglify": "^0.1.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "grunt",
+    "development": "grunt",
+    "production": "grunt sass postcss"
   },
   "repository": {
     "type": "git",
