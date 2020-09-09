@@ -49,9 +49,11 @@ get_header(); ?>
                             $modules_query->the_post();
                             $landing_page_image = get_field( 'landing_page_image' );
 
+
+
                             echo '<section class="module ' . $post->post_name . '">';
                             echo '<a href="' . get_permalink() . '">';
-                            echo '<img src="' . esc_url( $landing_page_image['url'] ) . '" alt="' . esc_attr( $landing_page_image['alt'] ) . '" srcset="' . esc_attr( wp_get_attachment_image_srcset( $landing_page_image['id'] ) ) . '" sizes="' . esc_attr( wp_get_attachment_image_sizes( $landing_page_image['id'] ) ) . '" />';
+                            echo wp_get_attachment_image( $landing_page_image['id'], 'medium' );
                             echo '<h2>' . get_the_title() . '</h2>';
                             echo '</a>';
                             echo '</section>';
